@@ -13,6 +13,7 @@
 		6E52A5E02976FC8B00931934 /* AnswerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E52A5DF2976FC8B00931934 /* AnswerRow.swift */; };
 		6E52A5E42978495300931934 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E52A5E32978495200931934 /* QuestionView.swift */; };
 		6E52A5E629784B6300931934 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E52A5E529784B6300931934 /* Data.swift */; };
+		6EA4886A29784CC3003778CA /* QuizManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA4886929784CC3003778CA /* QuizManager.swift */; };
 		6EEC49C92976F79500E37CF2 /* Country_Flag_GameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEC49C82976F79500E37CF2 /* Country_Flag_GameApp.swift */; };
 		6EEC49CB2976F79500E37CF2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEC49CA2976F79500E37CF2 /* ContentView.swift */; };
 		6EEC49CD2976F79700E37CF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EEC49CC2976F79700E37CF2 /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 		6E52A5DF2976FC8B00931934 /* AnswerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerRow.swift; sourceTree = "<group>"; };
 		6E52A5E32978495200931934 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		6E52A5E529784B6300931934 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		6EA4886929784CC3003778CA /* QuizManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizManager.swift; sourceTree = "<group>"; };
 		6EEC49C52976F79500E37CF2 /* Country Flag Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Country Flag Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EEC49C82976F79500E37CF2 /* Country_Flag_GameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country_Flag_GameApp.swift; sourceTree = "<group>"; };
 		6EEC49CA2976F79500E37CF2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			children = (
 				6E52A5D82976FA3800931934 /* Question.swift */,
 				6E52A5E529784B6300931934 /* Data.swift */,
+				6EA4886929784CC3003778CA /* QuizManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				6E52A5D92976FA3800931934 /* Question.swift in Sources */,
 				6EEC49CB2976F79500E37CF2 /* ContentView.swift in Sources */,
 				6E52A5E42978495300931934 /* QuestionView.swift in Sources */,
+				6EA4886A29784CC3003778CA /* QuizManager.swift in Sources */,
 				6E52A5DD2976FBF000931934 /* ProgressBar.swift in Sources */,
 				6E52A5E02976FC8B00931934 /* AnswerRow.swift in Sources */,
 				6EEC49C92976F79500E37CF2 /* Country_Flag_GameApp.swift in Sources */,
