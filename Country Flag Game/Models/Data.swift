@@ -7,8 +7,11 @@
 
 import Foundation
 
-struct Data {
-    let questions = [
+class Data: ObservableObject {
+    
+    //20 countries
+    private var countries = ["Angola", "Austria", "China", "England", "Estonia", "France", "Germany", "Greece", "India", "Israel", "Italy", "Norway", "Pakistan", "Peru", "Saudi Arabia", "South Africa", "Spain", "Sweden", "Ukraine", "United States"]
+    @Published private(set) var questions = [
  
         Question(correctAnswer:
                 Answer(text: "England", isCorrect: true),
@@ -37,4 +40,29 @@ struct Data {
            ])
  
     ]
+    
+    init() {
+        var count = 0
+        while(count < 22) {
+            addQuestion()
+            count += 1
+        }
+        
+    }
+    
+   func addQuestion() {
+       let correctChoice = Answer(text: countries[Int.random(in: 0..<20)], isCorrect: true)
+       var wrongChoices = [Answer(text: "", isCorrect: false), Answer(text: "", isCorrect: false), Answer(text: "", isCorrect: false)]
+       
+       var counter = 0
+       while(counter < 3) {
+           repeat {
+               wrongChoices[counter].text = countries[Int.random(in: 0..<20)]
+           } while(wrongChoices[counter].text == correctChoice.text)
+           counter += 1
+       }
+        
+        questions.append(Question(correctAnswer: correctChoice, incorrectAnswers: wrongChoices))
+    }
+    
 }
